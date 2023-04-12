@@ -1,0 +1,4090 @@
+{
+  "com.victronenergy.gps/Position/Latitude": {
+    "code": "lt",
+    "whenToLog": "never"
+  },
+  "com.victronenergy.gps/Position/Longitude": {
+    "code": "lg",
+    "whenToLog": "never"
+  },
+  "com.victronenergy.gps/Course": {
+    "code": "lc",
+    "whenToLog": "never"
+  },
+  "com.victronenergy.gps/Speed": {
+    "code": "ls",
+    "whenToLog": "never"
+  },
+  "com.victronenergy.gps/Altitude": {
+    "code": "la",
+    "whenToLog": "never"
+  },
+  "com.victronenergy.settings/Settings/Vrmlogger/LogInterval": {
+    "code": "sl",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Vrmlogger/Logmode": {
+    "code": "vl",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Vrmlogger/RamDiskMode": {
+    "code": "rdm",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/AccessLevel": {
+    "code": "al",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/AutoUpdate": {
+    "code": "au",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/ReleaseType": {
+    "code": "ut",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/MqttVrm": {
+    "code": "tw",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/Modbus": {
+    "code": "mb",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/OceanvoltMotorDrive": {
+    "code": "od",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/OceanvoltValence": {
+    "code": "ov",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/MqttLocal": {
+    "code": "mql",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/MqttLocalInsecure": {
+    "code": "mqli",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/Bol": {
+    "code": "bol",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/ActiveNetworkConnection": {
+    "code": "dg",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/RemoteSupportIpAndPort": {
+    "code": "rsIpPort",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/RemoteSupport": {
+    "code": "rss",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/VncLocal": {
+    "code": "Vl",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/VncInternet": {
+    "code": "Vi",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/System/TimeZone": {
+    "code": "tz",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/AcInput1": {
+    "code": "si1",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/AcInput2": {
+    "code": "si2",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/BatteryService": {
+    "code": "sb",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/WriteVebusSoc": {
+    "code": "sv",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/HasDcSystem": {
+    "code": "shd",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/SharedVoltageSense": {
+    "code": "svs",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/MaxChargeCurrent": {
+    "code": "umc",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/MaxChargeVoltage": {
+    "code": "umv",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Gui/DemoMode": {
+    "code": "dm",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/BatteryLife/State": {
+    "code": "H4bs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/BatteryLife/SocLimit": {
+    "code": "H4as",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/BatteryLife/MinimumSocLimit": {
+    "code": "H4ms",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/Hub4Mode": {
+    "code": "H4M",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/RunWithoutGridMeter": {
+    "code": "rwgm",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/OvervoltageFeedIn": {
+    "code": "H4of",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/PreventFeedback": {
+    "code": "H4pf",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/SystemSetup/HasAcOutSystem": {
+    "code": "shao",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/CGwacs/MaxFeedInPower": {
+    "code": "mfp",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/NodeRed": {
+    "code": "nr",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Services/SignalK": {
+    "code": "sk",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/FischerPanda0/AccumulatedTotal": {
+    "code": "Ft",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.settings/Settings/Generator0/AccumulatedTotal": {
+    "code": "Gt",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.settings/Settings/Relay/Function": {
+    "code": "rf0",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.settings/Settings/Relay/1/Function": {
+    "code": "rf1",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Interfaces/Mk2/Version": {
+    "code": "vmk2",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Interfaces/Mk2/ProductName": {
+    "code": "pmk2",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/FirmwareVersion": {
+    "code": "vvv",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/ProductId": {
+    "code": "vvp",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/ShortIds": {
+    "code": "vid",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Mgmt/Connection": {
+    "code": "vmc",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/CustomName": {
+    "code": "vcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L1/V": {
+    "code": "IV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L2/V": {
+    "code": "IV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L3/V": {
+    "code": "IV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L1/I": {
+    "code": "II1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L2/I": {
+    "code": "II2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L3/I": {
+    "code": "II3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L1/F": {
+    "code": "IF1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L2/F": {
+    "code": "IF2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L3/F": {
+    "code": "IF3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L1/P": {
+    "code": "IP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L2/P": {
+    "code": "IP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/L3/P": {
+    "code": "IP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L1/V": {
+    "code": "OV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L2/V": {
+    "code": "OV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L3/V": {
+    "code": "OV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L1/I": {
+    "code": "OI1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L2/I": {
+    "code": "OI2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L3/I": {
+    "code": "OI3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L1/F": {
+    "code": "OF",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/CurrentLimit": {
+    "code": "AILIM",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/In/1/CurrentLimit": {
+    "code": "vIL1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/In/1/CurrentLimitIsAdjustable": {
+    "code": "vIA1",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Ac/In/2/CurrentLimit": {
+    "code": "vIL2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/In/2/CurrentLimitIsAdjustable": {
+    "code": "vIA2",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Ac/Out/L1/P": {
+    "code": "OP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L2/P": {
+    "code": "OP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/Out/L3/P": {
+    "code": "OP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/State/IgnoreAcIn1": {
+    "code": "ia",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Ac/State/IgnoreAcIn2": {
+    "code": "ia2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Ac/State/SplitPhaseL2Passthru": {
+    "code": "SP",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Dc/0/Voltage": {
+    "code": "CV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Dc/0/Current": {
+    "code": "CI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Dc/0/Temperature": {
+    "code": "CT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Ac/NumberOfPhases": {
+    "code": "PC",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Ac/ActiveIn/ActiveInput": {
+    "code": "AI",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Soc": {
+    "code": "VSOC",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/State": {
+    "code": "S",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/VebusChargeState": {
+    "code": "vcs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/VebusError": {
+    "code": "ERR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Mode": {
+    "code": "s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/ModeIsAdjustable": {
+    "code": "sa",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Alarms/HighTemperature": {
+    "code": "eT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/LowBattery": {
+    "code": "eL",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/Overload": {
+    "code": "eO",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/TemperatureSensor": {
+    "code": "eTS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/VoltageSensor": {
+    "code": "eVS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/PhaseRotation": {
+    "code": "ePR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/Ripple": {
+    "code": "eR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L1/HighTemperature": {
+    "code": "eT1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L1/LowBattery": {
+    "code": "eL1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L1/Overload": {
+    "code": "eO1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L1/Ripple": {
+    "code": "eR1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L2/HighTemperature": {
+    "code": "eT2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L2/LowBattery": {
+    "code": "eL2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L2/Overload": {
+    "code": "eO2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L2/Ripple": {
+    "code": "eR2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L3/HighTemperature": {
+    "code": "eT3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L3/LowBattery": {
+    "code": "eL3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L3/Overload": {
+    "code": "eO3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/L3/Ripple": {
+    "code": "eR3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/GridLost": {
+    "code": "Agl",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/HighDcVoltage": {
+    "code": "eV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/HighDcCurrent": {
+    "code": "eC",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Alarms/BmsPreAlarm": {
+    "code": "vbp",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Hub4/L1/AcPowerSetpoint": {
+    "code": "aps1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Hub4/L2/AcPowerSetpoint": {
+    "code": "aps2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Hub4/L3/AcPowerSetpoint": {
+    "code": "aps3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Hub4/LowSoc": {
+    "code": "H4LS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Hub4/Sustain": {
+    "code": "H4S",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Hub4/L1/FrequencyVariationOccurred": {
+    "code": "H4f1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Hub4/L2/FrequencyVariationOccurred": {
+    "code": "H4f2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Hub4/L3/FrequencyVariationOccurred": {
+    "code": "H4f3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Hub4/L1/MaxFeedInPower": {
+    "code": "H4l1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Hub4/L2/MaxFeedInPower": {
+    "code": "H4l2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Hub4/L3/MaxFeedInPower": {
+    "code": "H4l3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Hub/ChargeVoltage": {
+    "code": "Hcsp",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/AcIn1ToInverter": {
+    "code": "t1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/AcIn2ToInverter": {
+    "code": "t2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/AcIn1ToAcOut": {
+    "code": "t3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/AcIn2ToAcOut": {
+    "code": "t4",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/InverterToAcIn1": {
+    "code": "t5",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/InverterToAcIn2": {
+    "code": "t6",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/AcOutToAcIn1": {
+    "code": "t7",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/AcOutToAcIn2": {
+    "code": "t8",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/InverterToAcOut": {
+    "code": "t9",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Energy/OutToInverter": {
+    "code": "t10",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/0/Assistants": {
+    "code": "asT0",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/1/Assistants": {
+    "code": "asT1",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/2/Assistants": {
+    "code": "asT2",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/3/Assistants": {
+    "code": "asT3",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/4/Assistants": {
+    "code": "asT4",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/5/Assistants": {
+    "code": "asT5",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/6/Assistants": {
+    "code": "asT6",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/7/Assistants": {
+    "code": "asT7",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/8/Assistants": {
+    "code": "asT8",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/9/Assistants": {
+    "code": "asT9",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/10/Assistants": {
+    "code": "asT10",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/11/Assistants": {
+    "code": "asT11",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/12/Assistants": {
+    "code": "asT12",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/13/Assistants": {
+    "code": "asT13",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/14/Assistants": {
+    "code": "asT14",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/0/ExtendStatus/GridRelayReport/Code": {
+    "code": "e0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/0/ExtendStatus/GridRelayReport/Count": {
+    "code": "c0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/1/ExtendStatus/GridRelayReport/Code": {
+    "code": "e1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/1/ExtendStatus/GridRelayReport/Count": {
+    "code": "c1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/2/ExtendStatus/GridRelayReport/Code": {
+    "code": "e2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/2/ExtendStatus/GridRelayReport/Count": {
+    "code": "c2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/3/ExtendStatus/GridRelayReport/Code": {
+    "code": "e3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/3/ExtendStatus/GridRelayReport/Count": {
+    "code": "c3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/4/ExtendStatus/GridRelayReport/Code": {
+    "code": "e4",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/4/ExtendStatus/GridRelayReport/Count": {
+    "code": "c4",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/5/ExtendStatus/GridRelayReport/Code": {
+    "code": "e5",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/5/ExtendStatus/GridRelayReport/Count": {
+    "code": "c5",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/6/ExtendStatus/GridRelayReport/Code": {
+    "code": "e6",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/6/ExtendStatus/GridRelayReport/Count": {
+    "code": "c6",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/7/ExtendStatus/GridRelayReport/Code": {
+    "code": "e7",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/7/ExtendStatus/GridRelayReport/Count": {
+    "code": "c7",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/8/ExtendStatus/GridRelayReport/Code": {
+    "code": "e8",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/8/ExtendStatus/GridRelayReport/Count": {
+    "code": "c8",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/9/ExtendStatus/GridRelayReport/Code": {
+    "code": "e9",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/9/ExtendStatus/GridRelayReport/Count": {
+    "code": "c9",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/10/ExtendStatus/GridRelayReport/Code": {
+    "code": "e10",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/10/ExtendStatus/GridRelayReport/Count": {
+    "code": "c10",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/11/ExtendStatus/GridRelayReport/Code": {
+    "code": "e11",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/11/ExtendStatus/GridRelayReport/Count": {
+    "code": "c11",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/0/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/1/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/2/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/3/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/4/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q4",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/5/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q5",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/6/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q6",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/7/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q7",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/8/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q8",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/9/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q9",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/10/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q10",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/11/ExtendStatus/VeBusNetworkQualityCounter": {
+    "code": "q11",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/0/ExtendStatus/WaitingForRelayTest": {
+    "code": "rt",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/0/ExtendStatus/HighDcVoltage": {
+    "code": "v0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/1/ExtendStatus/HighDcVoltage": {
+    "code": "v1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/2/ExtendStatus/HighDcVoltage": {
+    "code": "v2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/3/ExtendStatus/HighDcVoltage": {
+    "code": "v3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/4/ExtendStatus/HighDcVoltage": {
+    "code": "v4",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/5/ExtendStatus/HighDcVoltage": {
+    "code": "v5",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/6/ExtendStatus/HighDcVoltage": {
+    "code": "v6",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/7/ExtendStatus/HighDcVoltage": {
+    "code": "v7",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/8/ExtendStatus/HighDcVoltage": {
+    "code": "v8",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/9/ExtendStatus/HighDcVoltage": {
+    "code": "v9",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/10/ExtendStatus/HighDcVoltage": {
+    "code": "v10",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/11/ExtendStatus/HighDcVoltage": {
+    "code": "v11",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/0/ExtendStatus/HighDcCurrent": {
+    "code": "d0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/1/ExtendStatus/HighDcCurrent": {
+    "code": "d1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/2/ExtendStatus/HighDcCurrent": {
+    "code": "d2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/3/ExtendStatus/HighDcCurrent": {
+    "code": "d3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/4/ExtendStatus/HighDcCurrent": {
+    "code": "d4",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/5/ExtendStatus/HighDcCurrent": {
+    "code": "d5",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/6/ExtendStatus/HighDcCurrent": {
+    "code": "d6",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/7/ExtendStatus/HighDcCurrent": {
+    "code": "d7",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/8/ExtendStatus/HighDcCurrent": {
+    "code": "d8",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/9/ExtendStatus/HighDcCurrent": {
+    "code": "d9",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/10/ExtendStatus/HighDcCurrent": {
+    "code": "d10",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/11/ExtendStatus/HighDcCurrent": {
+    "code": "d11",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/0/ExtendStatus/PowerPackPreOverload": {
+    "code": "p0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/1/ExtendStatus/PowerPackPreOverload": {
+    "code": "p1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/2/ExtendStatus/PowerPackPreOverload": {
+    "code": "p2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/3/ExtendStatus/PowerPackPreOverload": {
+    "code": "p3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/4/ExtendStatus/PowerPackPreOverload": {
+    "code": "p4",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/5/ExtendStatus/PowerPackPreOverload": {
+    "code": "p5",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/6/ExtendStatus/PowerPackPreOverload": {
+    "code": "p6",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/7/ExtendStatus/PowerPackPreOverload": {
+    "code": "p7",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/8/ExtendStatus/PowerPackPreOverload": {
+    "code": "p8",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/9/ExtendStatus/PowerPackPreOverload": {
+    "code": "p9",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/10/ExtendStatus/PowerPackPreOverload": {
+    "code": "p10",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/11/ExtendStatus/PowerPackPreOverload": {
+    "code": "p11",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/0/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/1/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/2/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/3/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns3",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/4/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns4",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/5/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns5",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/6/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns6",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/7/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns7",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/8/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns8",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/9/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns9",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/10/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns10",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/11/InterfaceProtectionLog/0/ErrorFlags": {
+    "code": "ns11",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/PvInverter/Disable": {
+    "code": "dPV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Bms/AllowToCharge": {
+    "code": "vbc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Bms/AllowToDischarge": {
+    "code": "vbd",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Bms/BmsExpected": {
+    "code": "vbx",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Bms/Error": {
+    "code": "vbe",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.vebus/Devices/0/UpTime": {
+    "code": "vu",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/1/UpTime": {
+    "code": "vu1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/2/UpTime": {
+    "code": "vu2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/3/UpTime": {
+    "code": "vu3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/4/UpTime": {
+    "code": "vu4",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/5/UpTime": {
+    "code": "vu5",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/6/UpTime": {
+    "code": "vu6",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/7/UpTime": {
+    "code": "vu7",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/8/UpTime": {
+    "code": "vu8",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/9/UpTime": {
+    "code": "vu9",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/10/UpTime": {
+    "code": "vu10",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/11/UpTime": {
+    "code": "vu11",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/0/SerialNumber": {
+    "code": "vs0",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/1/SerialNumber": {
+    "code": "vs1",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/2/SerialNumber": {
+    "code": "vs2",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/3/SerialNumber": {
+    "code": "vs3",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/4/SerialNumber": {
+    "code": "vs4",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/5/SerialNumber": {
+    "code": "vs5",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/6/SerialNumber": {
+    "code": "vs6",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/7/SerialNumber": {
+    "code": "vs7",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/8/SerialNumber": {
+    "code": "vs8",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/9/SerialNumber": {
+    "code": "vs9",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/10/SerialNumber": {
+    "code": "vs10",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/11/SerialNumber": {
+    "code": "vs11",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.vebus/Devices/0/Diagnostics/UBatRipple": {
+    "code": "vr0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/1/Diagnostics/UBatRipple": {
+    "code": "vr1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/2/Diagnostics/UBatRipple": {
+    "code": "vr2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/3/Diagnostics/UBatRipple": {
+    "code": "vr3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/4/Diagnostics/UBatRipple": {
+    "code": "vr4",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/5/Diagnostics/UBatRipple": {
+    "code": "vr5",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/6/Diagnostics/UBatRipple": {
+    "code": "vr6",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/7/Diagnostics/UBatRipple": {
+    "code": "vr7",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/8/Diagnostics/UBatRipple": {
+    "code": "vr8",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/9/Diagnostics/UBatRipple": {
+    "code": "vr9",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/10/Diagnostics/UBatRipple": {
+    "code": "vr10",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/11/Diagnostics/UBatRipple": {
+    "code": "vr11",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/0/Diagnostics/UBatTerminal": {
+    "code": "vt0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/1/Diagnostics/UBatTerminal": {
+    "code": "vt1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/2/Diagnostics/UBatTerminal": {
+    "code": "vt2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/3/Diagnostics/UBatTerminal": {
+    "code": "vt3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/4/Diagnostics/UBatTerminal": {
+    "code": "vt4",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/5/Diagnostics/UBatTerminal": {
+    "code": "vt5",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/6/Diagnostics/UBatTerminal": {
+    "code": "vt6",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/7/Diagnostics/UBatTerminal": {
+    "code": "vt7",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/8/Diagnostics/UBatTerminal": {
+    "code": "vt8",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/9/Diagnostics/UBatTerminal": {
+    "code": "vt9",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/10/Diagnostics/UBatTerminal": {
+    "code": "vt10",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/11/Diagnostics/UBatTerminal": {
+    "code": "vt11",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.vebus/Devices/0/Diagnostics/UBatVSense": {
+    "code": "vu0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/ProductId": {
+    "code": "BM",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/FirmwareVersion": {
+    "code": "BV",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Serial": {
+    "code": "BSN",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/CustomName": {
+    "code": "Bcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Dc/0/Voltage": {
+    "code": "V",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Dc/1/Voltage": {
+    "code": "VS",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Dc/0/Current": {
+    "code": "I",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Dc/0/Temperature": {
+    "code": "BT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Dc/0/MidVoltage": {
+    "code": "VM",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Dc/0/MidVoltageDeviation": {
+    "code": "VMD",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/ConsumedAmphours": {
+    "code": "CE",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Soc": {
+    "code": "SOC",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Soh": {
+    "code": "SOH",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/TimeToGo": {
+    "code": "TTG",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Info/MaxChargeVoltage": {
+    "code": "mvc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Info/BatteryLowVoltage": {
+    "code": "mdv",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Info/MaxChargeCurrent": {
+    "code": "mcc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Info/MaxDischargeCurrent": {
+    "code": "mdc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Alarms/LowVoltage": {
+    "code": "AL",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighVoltage": {
+    "code": "AH",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/LowStarterVoltage": {
+    "code": "ALS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighStarterVoltage": {
+    "code": "AHS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/LowSoc": {
+    "code": "ASoc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/LowTemperature": {
+    "code": "ALT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighTemperature": {
+    "code": "AHT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/MidVoltage": {
+    "code": "AM",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/LowFusedVoltage": {
+    "code": "ALF",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighFusedVoltage": {
+    "code": "AHF",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/FuseBlown": {
+    "code": "AFB",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighInternalTemperature": {
+    "code": "AHIT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/CellImbalance": {
+    "code": "ACI",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighChargeCurrent": {
+    "code": "AHC",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighDischargeCurrent": {
+    "code": "AHD",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighChargeTemperature": {
+    "code": "AHCT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/LowChargeTemperature": {
+    "code": "ALCT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/InternalFailure": {
+    "code": "AIE",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/LowCellVoltage": {
+    "code": "ALCV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/ChargeBlocked": {
+    "code": "Abc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/DischargeBlocked": {
+    "code": "Abd",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/HighCurrent": {
+    "code": "AHI",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/Contactor": {
+    "code": "AC",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Alarms/BmsCable": {
+    "code": "ABC",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Relay/0/State": {
+    "code": "Relay",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/History/DeepestDischarge": {
+    "code": "H1",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/LastDischarge": {
+    "code": "H2",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/AverageDischarge": {
+    "code": "H3",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/ChargeCycles": {
+    "code": "H4",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/FullDischarges": {
+    "code": "H5",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/TotalAhDrawn": {
+    "code": "H6",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/MinimumVoltage": {
+    "code": "H7",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/MaximumVoltage": {
+    "code": "H8",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/TimeSinceLastFullCharge": {
+    "code": "H9",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/AutomaticSyncs": {
+    "code": "H10",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/LowVoltageAlarms": {
+    "code": "H11",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/HighVoltageAlarms": {
+    "code": "H12",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/LowStarterVoltageAlarms": {
+    "code": "H13",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/HighStarterVoltageAlarms": {
+    "code": "H14",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/MinimumStarterVoltage": {
+    "code": "H15",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/MaximumStarterVoltage": {
+    "code": "H16",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/LowFusedVoltageAlarms": {
+    "code": "H17",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/HighFusedVoltageAlarms": {
+    "code": "H18",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/MinimumFusedVoltage": {
+    "code": "H19",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/MaximumFusedVoltage": {
+    "code": "H20",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/DischargedEnergy": {
+    "code": "H21",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/ChargedEnergy": {
+    "code": "H22",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/Capacity": {
+    "code": "ca",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/State": {
+    "code": "liS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/ErrorCode": {
+    "code": "liE",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/SystemSwitch": {
+    "code": "Sw",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Balancing": {
+    "code": "B",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/System/NrOfBatteries": {
+    "code": "nB",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/System/BatteriesParallel": {
+    "code": "BP",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/System/BatteriesSeries": {
+    "code": "BS",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/System/NrOfCellsPerBattery": {
+    "code": "NrC",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/System/MinCellVoltage": {
+    "code": "mcV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/System/MaxCellVoltage": {
+    "code": "McV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/System/NrOfModulesBlockingCharge": {
+    "code": "mbc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/System/NrOfModulesBlockingDischarge": {
+    "code": "mbd",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/System/NrOfModulesOffline": {
+    "code": "mof",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/System/NrOfModulesOnline": {
+    "code": "mon",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Diagnostics/ShutDownsDueError": {
+    "code": "Se",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/Diagnostics/LastErrors/1/Error": {
+    "code": "Le1",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/Diagnostics/LastErrors/2/Error": {
+    "code": "Le2",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/Diagnostics/LastErrors/3/Error": {
+    "code": "Le3",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/Diagnostics/LastErrors/4/Error": {
+    "code": "Le4",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/System/MinCellTemperature": {
+    "code": "mcT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/System/MaxCellTemperature": {
+    "code": "McT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Io/AllowToCharge": {
+    "code": "aCh",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Io/AllowToDischarge": {
+    "code": "aD",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Io/ExternalRelay": {
+    "code": "eRelay",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/Io/ProgrammableContact": {
+    "code": "PCo",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.battery/History/MinimumCellVoltage": {
+    "code": "liH1",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/History/MaximumCellVoltage": {
+    "code": "liH2",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.battery/Distributor/A/Alarms/ConnectionLost": {
+    "code": "dAc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Alarms/ConnectionLost": {
+    "code": "dBc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Alarms/ConnectionLost": {
+    "code": "dCc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Alarms/ConnectionLost": {
+    "code": "dDc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Status": {
+    "code": "dAs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Status": {
+    "code": "dBs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Status": {
+    "code": "dCs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Status": {
+    "code": "dDs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/0/Name": {
+    "code": "dAf0n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/1/Name": {
+    "code": "dAf1n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/2/Name": {
+    "code": "dAf2n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/3/Name": {
+    "code": "dAf3n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/0/Name": {
+    "code": "dBf0n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/1/Name": {
+    "code": "dBf1n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/2/Name": {
+    "code": "dBf2n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/3/Name": {
+    "code": "dBf3n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/0/Name": {
+    "code": "dCf0n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/1/Name": {
+    "code": "dCf1n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/2/Name": {
+    "code": "dCf2n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/3/Name": {
+    "code": "dCf3n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/0/Name": {
+    "code": "dDf0n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/1/Name": {
+    "code": "dDf1n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/2/Name": {
+    "code": "dDf2n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/3/Name": {
+    "code": "dDf3n",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/0/Status": {
+    "code": "dAf0s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/1/Status": {
+    "code": "dAf1s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/2/Status": {
+    "code": "dAf2s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/3/Status": {
+    "code": "dAf3s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/0/Status": {
+    "code": "dBf0s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/1/Status": {
+    "code": "dBf1s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/2/Status": {
+    "code": "dBf2s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/3/Status": {
+    "code": "dBf3s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/0/Status": {
+    "code": "dCf0s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/1/Status": {
+    "code": "dCf1s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/2/Status": {
+    "code": "dCf2s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/3/Status": {
+    "code": "dCf3s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/0/Status": {
+    "code": "dDf0s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/1/Status": {
+    "code": "dDf1s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/2/Status": {
+    "code": "dDf2s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/3/Status": {
+    "code": "dDf3s",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/0/Alarms/Blown": {
+    "code": "dAf0b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/1/Alarms/Blown": {
+    "code": "dAf1b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/2/Alarms/Blown": {
+    "code": "dAf2b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/A/Fuse/3/Alarms/Blown": {
+    "code": "dAf3b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/0/Alarms/Blown": {
+    "code": "dBf0b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/1/Alarms/Blown": {
+    "code": "dBf1b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/2/Alarms/Blown": {
+    "code": "dBf2b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/B/Fuse/3/Alarms/Blown": {
+    "code": "dBf3b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/0/Alarms/Blown": {
+    "code": "dCf0b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/1/Alarms/Blown": {
+    "code": "dCf1b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/2/Alarms/Blown": {
+    "code": "dCf2b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/C/Fuse/3/Alarms/Blown": {
+    "code": "dCf3b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/0/Alarms/Blown": {
+    "code": "dDf0b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/1/Alarms/Blown": {
+    "code": "dDf1b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/2/Alarms/Blown": {
+    "code": "dDf2b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.battery/Distributor/D/Fuse/3/Alarms/Blown": {
+    "code": "dDf3b",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/ProductId": {
+    "code": "ScM",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.solarcharger/FirmwareVersion": {
+    "code": "ScVt",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.solarcharger/Serial": {
+    "code": "ScSN",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.solarcharger/CustomName": {
+    "code": "Sccn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.solarcharger/Settings/BatteryVoltageSetting": {
+    "code": "Scvs",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.solarcharger/Dc/0/Voltage": {
+    "code": "ScV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Dc/0/Current": {
+    "code": "ScI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Dc/0/Temperature": {
+    "code": "ScT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Load/State": {
+    "code": "SLs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/Load/I": {
+    "code": "SLI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Mode": {
+    "code": "Scs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/MppOperationMode": {
+    "code": "ScMm",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/State": {
+    "code": "ScS",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/DeviceOffReason": {
+    "code": "ScOR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/Pv/V": {
+    "code": "PVV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Yield/Power": {
+    "code": "PVP",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Equalization/Pending": {
+    "code": "EqP",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Equalization/TimeRemaining": {
+    "code": "EqT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Relay/0/State": {
+    "code": "SRelay",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/Alarms/LowVoltage": {
+    "code": "SceL",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/Alarms/HighVoltage": {
+    "code": "SceH",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Yield": {
+    "code": "YT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/MaxPower": {
+    "code": "MCPT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Yield": {
+    "code": "YY",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/MaxPower": {
+    "code": "MCPY",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/0/V": {
+    "code": "PVV0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/1/V": {
+    "code": "PVV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/2/V": {
+    "code": "PVV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/3/V": {
+    "code": "PVV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/0/P": {
+    "code": "PVP0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/1/P": {
+    "code": "PVP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/2/P": {
+    "code": "PVP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/Pv/3/P": {
+    "code": "PVP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/0/Yield": {
+    "code": "YT0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/1/Yield": {
+    "code": "YT1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/2/Yield": {
+    "code": "YT2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/3/Yield": {
+    "code": "YT3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/0/Yield": {
+    "code": "YY0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/1/Yield": {
+    "code": "YY1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/2/Yield": {
+    "code": "YY2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/3/Yield": {
+    "code": "YY3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/0/MaxPower": {
+    "code": "MCPT0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/1/MaxPower": {
+    "code": "MCPT1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/2/MaxPower": {
+    "code": "MCPT2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/0/Pv/3/MaxPower": {
+    "code": "MCPT3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/0/MaxPower": {
+    "code": "MCPY0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/1/MaxPower": {
+    "code": "MCPY1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/2/MaxPower": {
+    "code": "MCPY2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/History/Daily/1/Pv/3/MaxPower": {
+    "code": "MCPY3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.solarcharger/ErrorCode": {
+    "code": "ScERR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.solarcharger/Yield/User": {
+    "code": "YU",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnOutput/L1/Power": {
+    "code": "P",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnOutput/L2/Power": {
+    "code": "P2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnOutput/L3/Power": {
+    "code": "P3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnGrid/L1/Power": {
+    "code": "Pi",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnGrid/L2/Power": {
+    "code": "Pi2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnGrid/L3/Power": {
+    "code": "Pi3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnGenset/L1/Power": {
+    "code": "Pj",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnGenset/L2/Power": {
+    "code": "Pj2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/PvOnGenset/L3/Power": {
+    "code": "Pj3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Pv/Power": {
+    "code": "Pdc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Consumption/L1/Power": {
+    "code": "a1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Consumption/L2/Power": {
+    "code": "a2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Consumption/L3/Power": {
+    "code": "a3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/ConsumptionOnInput/L1/Power": {
+    "code": "i1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/ConsumptionOnInput/L2/Power": {
+    "code": "i2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/ConsumptionOnInput/L3/Power": {
+    "code": "i3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/ConsumptionOnOutput/L1/Power": {
+    "code": "o1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/ConsumptionOnOutput/L2/Power": {
+    "code": "o2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/ConsumptionOnOutput/L3/Power": {
+    "code": "o3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Grid/L1/Power": {
+    "code": "g1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Grid/L2/Power": {
+    "code": "g2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Grid/L3/Power": {
+    "code": "g3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Genset/L1/Power": {
+    "code": "gs1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Genset/L2/Power": {
+    "code": "gs2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Genset/L3/Power": {
+    "code": "gs3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/Genset/LastStartTime": {
+    "code": "gLS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/Genset/RunningByConditionCode": {
+    "code": "gRC",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/Genset/Runtime": {
+    "code": "gRT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/ActiveIn/Source": {
+    "code": "AIS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Dc/System/Power": {
+    "code": "dc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Battery/Voltage": {
+    "code": "bv",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Battery/Current": {
+    "code": "bc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Battery/Power": {
+    "code": "bp",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Vebus/Current": {
+    "code": "vc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Vebus/Power": {
+    "code": "vp",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Battery/Soc": {
+    "code": "bs",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Battery/State": {
+    "code": "bst",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Battery/Temperature": {
+    "code": "bT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Dc/Battery/ConsumedAmphours": {
+    "code": "ba",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/ActiveBatteryService": {
+    "code": "abs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Dc/Battery/TimeToGo": {
+    "code": "bt",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Relay/0/State": {
+    "code": "cRelay",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Relay/1/State": {
+    "code": "cRelay1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Dc/Battery/Alarms/CircuitBreakerTripped": {
+    "code": "lgcb",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Dvcc/Alarms/FirmwareInsufficient": {
+    "code": "Af",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Dvcc/Alarms/MultipleBatteries": {
+    "code": "Amb",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Control/ScheduledCharge": {
+    "code": "sca",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Control/EffectiveChargeVoltage": {
+    "code": "evc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Control/ScheduledSoc": {
+    "code": "sct",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Control/ActiveSocLimit": {
+    "code": "ssl",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/BatteryLife": {
+    "code": "ssbl",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/ChargeDisabled": {
+    "code": "ssdc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/DischargeDisabled": {
+    "code": "ssdd",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/LowSoc": {
+    "code": "ssls",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/SlowCharge": {
+    "code": "sssc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/UserChargeLimited": {
+    "code": "ssuc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/UserDischargeLimited": {
+    "code": "ssud",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemState/State": {
+    "code": "ss",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.system/Ac/In/0/Connected": {
+    "code": "ic0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/0/DeviceInstance": {
+    "code": "id0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/0/VrmDeviceInstance": {
+    "code": "vi0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/0/ServiceType": {
+    "code": "ist0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/0/Source": {
+    "code": "is0",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/1/Connected": {
+    "code": "ic1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/1/DeviceInstance": {
+    "code": "id1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/1/VrmDeviceInstance": {
+    "code": "vi1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/1/ServiceType": {
+    "code": "ist1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/1/Source": {
+    "code": "is1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/Ac/In/NumberOfAcInputs": {
+    "code": "ini",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.system/SystemType": {
+    "code": "st",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/ProductId": {
+    "code": "pM",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/FroniusDeviceType": {
+    "code": "pF",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/FirmwareVersion": {
+    "code": "pV",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/DataManagerVersion": {
+    "code": "pdV",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/Position": {
+    "code": "pL",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/Serial": {
+    "code": "ps",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/CustomName": {
+    "code": "pcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pvinverter/Ac/L1/Voltage": {
+    "code": "pV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L1/Current": {
+    "code": "pI1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L1/Power": {
+    "code": "pP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L1/Energy/Forward": {
+    "code": "pE1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L2/Voltage": {
+    "code": "pV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L2/Current": {
+    "code": "pI2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L2/Power": {
+    "code": "pP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L2/Energy/Forward": {
+    "code": "pE2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L3/Voltage": {
+    "code": "pV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L3/Current": {
+    "code": "pI3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L3/Power": {
+    "code": "pP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/L3/Energy/Forward": {
+    "code": "pE3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/Ac/Energy/Forward": {
+    "code": "pf",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/StatusCode": {
+    "code": "pS",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pvinverter/ErrorCode": {
+    "code": "pE",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.pvinverter/Ac/PowerLimit": {
+    "code": "pLi",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.motordrive/Motor/RPM": {
+    "code": "mr",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.motordrive/Motor/Temperature": {
+    "code": "mt",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.motordrive/Dc/0/Voltage": {
+    "code": "coV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.motordrive/Dc/0/Current": {
+    "code": "coC",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.motordrive/Dc/0/Power": {
+    "code": "coP",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.motordrive/Controller/Temperature": {
+    "code": "coT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/ProductId": {
+    "code": "cP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.charger/FirmwareVersion": {
+    "code": "cF",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.charger/Serial": {
+    "code": "cS",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.charger/CustomName": {
+    "code": "ccn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.charger/Dc/0/Voltage": {
+    "code": "c0V",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Dc/0/Current": {
+    "code": "c0I",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Dc/0/Temperature": {
+    "code": "c0T",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Dc/1/Voltage": {
+    "code": "c1V",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Dc/1/Current": {
+    "code": "c1I",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Dc/2/Voltage": {
+    "code": "c2V",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Dc/2/Current": {
+    "code": "c2I",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Ac/In/L1/I": {
+    "code": "cI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Ac/In/L1/P": {
+    "code": "cPo",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Ac/In/CurrentLimit": {
+    "code": "cIl",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.charger/Mode": {
+    "code": "cM",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.charger/State": {
+    "code": "cSt",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.charger/ErrorCode": {
+    "code": "cE",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.charger/Relay/0/State": {
+    "code": "cR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.charger/Alarms/LowVoltage": {
+    "code": "cAl",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.charger/Alarms/HighVoltage": {
+    "code": "cAh",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.grid/ProductId": {
+    "code": "gP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.grid/Ac/L1/Power": {
+    "code": "g1p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L1/Voltage": {
+    "code": "g1v",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L1/Current": {
+    "code": "g1c",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L1/Frequency": {
+    "code": "g1F",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L2/Power": {
+    "code": "g2p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L2/Voltage": {
+    "code": "g2v",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L2/Current": {
+    "code": "g2c",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L2/Frequency": {
+    "code": "g2F",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L3/Power": {
+    "code": "g3p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L3/Voltage": {
+    "code": "g3v",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L3/Current": {
+    "code": "g3c",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L3/Frequency": {
+    "code": "g3F",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/CustomName": {
+    "code": "gcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.grid/PhaseSequence": {
+    "code": "gps",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.grid/Ac/L1/Energy/Forward": {
+    "code": "g1f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L2/Energy/Forward": {
+    "code": "g2f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L3/Energy/Forward": {
+    "code": "g3f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L1/Energy/Reverse": {
+    "code": "g1r",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L2/Energy/Reverse": {
+    "code": "g2r",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/L3/Energy/Reverse": {
+    "code": "g3r",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/Energy/Forward": {
+    "code": "gf",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.grid/Ac/Energy/Reverse": {
+    "code": "gr",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.zbmnode/ProductId": {
+    "code": "ZID",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.zbmnode/FirmwareVersion": {
+    "code": "ZFV",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.zbmnode/Alarms/AirTemperatureSensor": {
+    "code": "AZAT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/BatteryTemperatureSensor": {
+    "code": "AZBT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/BromidePump": {
+    "code": "AZBP",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/ElectricBoard": {
+    "code": "AZEB",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/HighTemperature": {
+    "code": "AZHT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/HighVoltage": {
+    "code": "AZHV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/InternalFailure": {
+    "code": "AZIF",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/Leak1Trip": {
+    "code": "AZL1",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/Leak2Trip": {
+    "code": "AZL2",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/LeakSensors": {
+    "code": "AZLS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/OverCurrent": {
+    "code": "AZOC",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/StateOfHealth": {
+    "code": "AZSH",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/Unknown": {
+    "code": "AZU",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.zbmnode/Alarms/ZincPump": {
+    "code": "AZZP",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.tank/ProductId": {
+    "code": "tP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.tank/FirmwareVersion": {
+    "code": "tv",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.tank/Capacity": {
+    "code": "tc",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.tank/FluidType": {
+    "code": "tf",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.tank/CustomName": {
+    "code": "tcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.tank/Level": {
+    "code": "tl",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.tank/Remaining": {
+    "code": "tr",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.tank/Status": {
+    "code": "ts",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/ProductId": {
+    "code": "iP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.inverter/FirmwareVersion": {
+    "code": "iFV",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.inverter/CustomName": {
+    "code": "icn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.inverter/Ac/Out/L1/I": {
+    "code": "iOI1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Ac/Out/L1/V": {
+    "code": "iOV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Ac/Out/L1/F": {
+    "code": "iOF1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Ac/Out/L1/P": {
+    "code": "iOP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Alarms/HighTemperature": {
+    "code": "iHT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/HighVoltage": {
+    "code": "iHV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/HighVoltageAcOut": {
+    "code": "iHVA",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/LowTemperature": {
+    "code": "iLT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/LowVoltage": {
+    "code": "iLV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/LowVoltageAcOut": {
+    "code": "ilVA",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/Overload": {
+    "code": "iO",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/Ripple": {
+    "code": "iR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Alarms/LowSoc": {
+    "code": "iS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Dc/0/Voltage": {
+    "code": "i0V",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Dc/0/Current": {
+    "code": "iI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Dc/0/Temperature": {
+    "code": "iT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/DeviceOffReason": {
+    "code": "iOR",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Energy/InverterToAcOut": {
+    "code": "it9",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Energy/OutToInverter": {
+    "code": "it10",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Energy/SolarToAcOut": {
+    "code": "it11",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Energy/SolarToBattery": {
+    "code": "it12",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/ErrorCode": {
+    "code": "iE",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Mode": {
+    "code": "iM",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/MppOperationMode": {
+    "code": "iMm",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/V": {
+    "code": "iPVV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/0/V": {
+    "code": "iPVV0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/1/V": {
+    "code": "iPVV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/2/V": {
+    "code": "iPVV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/3/V": {
+    "code": "iPVV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/0/P": {
+    "code": "iPVP0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/1/P": {
+    "code": "iPVP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/2/P": {
+    "code": "iPVP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Pv/3/P": {
+    "code": "iPVP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/Relay/0/State": {
+    "code": "iRelay",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Serial": {
+    "code": "iSN",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.inverter/Soc": {
+    "code": "iSOC",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/State": {
+    "code": "iST",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.inverter/Yield/Power": {
+    "code": "iPVP",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Yield": {
+    "code": "iYT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/MaxPower": {
+    "code": "iMPT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Yield": {
+    "code": "iYY",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/MaxPower": {
+    "code": "iMPY",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/0/Yield": {
+    "code": "iYT0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/1/Yield": {
+    "code": "iYT1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/2/Yield": {
+    "code": "iYT2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/3/Yield": {
+    "code": "iYT3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/0/Yield": {
+    "code": "iYY0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/1/Yield": {
+    "code": "iYY1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/2/Yield": {
+    "code": "iYY2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/3/Yield": {
+    "code": "iYY3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/0/MaxPower": {
+    "code": "iMCPT0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/1/MaxPower": {
+    "code": "iMCPT1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/2/MaxPower": {
+    "code": "iMCPT2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/0/Pv/3/MaxPower": {
+    "code": "iMCPT3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/0/MaxPower": {
+    "code": "iMCPY0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/1/MaxPower": {
+    "code": "iMCPY1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/2/MaxPower": {
+    "code": "iMCPY2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.inverter/History/Daily/1/Pv/3/MaxPower": {
+    "code": "iMCPY3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/ProductId": {
+    "code": "GP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.genset/FirmwareVersion": {
+    "code": "Gv",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.genset/AutoStart": {
+    "code": "Gas",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.genset/CustomName": {
+    "code": "Gcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.genset/PhaseSequence": {
+    "code": "Gps",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.genset/StatusCode": {
+    "code": "GST",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.genset/ErrorCode": {
+    "code": "GE",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Engine/Load": {
+    "code": "Gel",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Engine/Speed": {
+    "code": "Ges",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Engine/OperatingHours": {
+    "code": "Geo",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Engine/CoolantTemperature": {
+    "code": "Gct",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Engine/WindingTemperature": {
+    "code": "Gwt",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Engine/ExaustTemperature": {
+    "code": "Get",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/StarterVoltage": {
+    "code": "Gsv",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L1/Voltage": {
+    "code": "G1v",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L1/Current": {
+    "code": "G1c",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L1/Power": {
+    "code": "G1p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L1/Frequency": {
+    "code": "G1f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L2/Voltage": {
+    "code": "G2v",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L2/Current": {
+    "code": "G2c",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L2/Power": {
+    "code": "G2p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L2/Frequency": {
+    "code": "G2f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L3/Voltage": {
+    "code": "G3v",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L3/Current": {
+    "code": "G3c",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L3/Power": {
+    "code": "G3p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.genset/Ac/L3/Frequency": {
+    "code": "G3f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.generator/Alarms/NoGeneratorAtAcIn": {
+    "code": "gaNG",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.generator/RunningByConditionCode": {
+    "code": "gaRC",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.generator/Runtime": {
+    "code": "gaR",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.generator/TodayRuntime": {
+    "code": "gaT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.generator/Error": {
+    "code": "gaE",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.generator/ManualStart": {
+    "code": "gaM",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.generator/ManualStartTimer": {
+    "code": "gaMT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.generator/QuietHours": {
+    "code": "gaQ",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.generator/Type": {
+    "code": "gat",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.generator/AutoStartEnabled": {
+    "code": "gaA",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.generator/State": {
+    "code": "gaS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.temperature/ProductId": {
+    "code": "tsP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.temperature/FirmwareVersion": {
+    "code": "tsV",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.temperature/Scale": {
+    "code": "tsc",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.temperature/Offset": {
+    "code": "tso",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.temperature/TemperatureType": {
+    "code": "tst",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.temperature/CustomName": {
+    "code": "tscn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.temperature/Temperature": {
+    "code": "tsT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.temperature/Status": {
+    "code": "tsS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.temperature/Humidity": {
+    "code": "tsH",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.temperature/Pressure": {
+    "code": "tsB",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pulsemeter/ProductId": {
+    "code": "pmP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pulsemeter/CustomName": {
+    "code": "pmcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.pulsemeter/Aggregate": {
+    "code": "ma",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.pulsemeter/Count": {
+    "code": "mc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.digitalinput/ProductId": {
+    "code": "diP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.digitalinput/CustomName": {
+    "code": "dicn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.digitalinput/Alarm": {
+    "code": "dia",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.digitalinput/State": {
+    "code": "dis",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.digitalinput/Count": {
+    "code": "dic",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.digitalinput/Type": {
+    "code": "dit",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.meteo/ProductId": {
+    "code": "msP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.meteo/Irradiance": {
+    "code": "msI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.meteo/WindSpeed": {
+    "code": "msW",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.meteo/CellTemperature": {
+    "code": "msC",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.meteo/ExternalTemperature": {
+    "code": "msT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcmeter/ProductId": {
+    "code": "dpi",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcmeter/FirmwareVersion": {
+    "code": "df",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcmeter/Dc/0/Voltage": {
+    "code": "dV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcmeter/Dc/0/Current": {
+    "code": "dI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcmeter/Dc/0/Power": {
+    "code": "dP",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcmeter/Dc/0/Energy": {
+    "code": "dE",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcmeter/ErrorFlags": {
+    "code": "de",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcmeter/State": {
+    "code": "dO",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcmeter/SwitchState": {
+    "code": "ds",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcmeter/CurrentLimit": {
+    "code": "dl",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcmeter/SavedState": {
+    "code": "dss",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcmeter/Threshold/24HrAllocation": {
+    "code": "da",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcmeter/Threshold/ResetHour": {
+    "code": "drh",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcmeter/Threshold/State": {
+    "code": "dts",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcmeter/Threshold/24HrUsage": {
+    "code": "du",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/ProductId": {
+    "code": "fcP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.fuelcell/FirmwareVersion": {
+    "code": "fcf",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.fuelcell/SerialFuelCellSystem": {
+    "code": "fcS1",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.fuelcell/SerialFuelCellStack": {
+    "code": "fcS2",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.fuelcell/AfterburnerTemperature1": {
+    "code": "fcab1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/AfterburnerTemperature2": {
+    "code": "fcab2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Dc/0/Voltage": {
+    "code": "fcV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Dc/0/Current": {
+    "code": "fcI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Dc/0/Power": {
+    "code": "fcp",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/FuelGasFlow1": {
+    "code": "fcgf1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/FuelGasFlow2": {
+    "code": "fcgf2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/ReformerTemperature1": {
+    "code": "fcrt1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/ReformerTemperature2": {
+    "code": "fcrt2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/StackTemperature1": {
+    "code": "fcst1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/StackTemperature2": {
+    "code": "fcst2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/StackTemperature3": {
+    "code": "fcst3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/StackTemperature4": {
+    "code": "fcst4",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/StatusCode": {
+    "code": "fcS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.fuelcell/Alarms/LowFuelPressure": {
+    "code": "fcAlp",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/LowBattery": {
+    "code": "fcAb",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/LostGrid": {
+    "code": "fcAg",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/SulfurTrap": {
+    "code": "fcAst",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/Vent": {
+    "code": "fcAv",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/FuelCellFault": {
+    "code": "fcAc",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/FuelCellOverTemperature": {
+    "code": "fcAct",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/FlowLimited": {
+    "code": "fcAfl",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/FlowFault": {
+    "code": "fcAff",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/ElectricalFault": {
+    "code": "fcAe",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/OverTemperature": {
+    "code": "fcAt",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/StartInhibit": {
+    "code": "fcAi",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.fuelcell/Alarms/ExpeditedStop": {
+    "code": "fcAs",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.hub4/Alarms/NoGridMeter": {
+    "code": "H4m",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.evcharger/ProductId": {
+    "code": "evP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/FirmwareVersion": {
+    "code": "evF",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/Serial": {
+    "code": "evS",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/Model": {
+    "code": "evpm",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/CustomName": {
+    "code": "evcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/MaxCurrent": {
+    "code": "evmi",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/Ac/Energy/Forward": {
+    "code": "evf",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.evcharger/Ac/L1/Power": {
+    "code": "ev1p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.evcharger/Ac/L2/Power": {
+    "code": "ev2p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.evcharger/Ac/L3/Power": {
+    "code": "ev3p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.evcharger/Ac/Power": {
+    "code": "evp",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.evcharger/ChargingTime": {
+    "code": "evt",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.evcharger/Current": {
+    "code": "evi",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.evcharger/Mode": {
+    "code": "evm",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.evcharger/Status": {
+    "code": "evs",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.evcharger/Position": {
+    "code": "evl",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/AutoStart": {
+    "code": "eva",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/EnableDisplay": {
+    "code": "evd",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.evcharger/StartStop": {
+    "code": "eve",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.evcharger/SetCurrent": {
+    "code": "evmc",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.acload/ProductId": {
+    "code": "aP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.acload/Ac/L1/Power": {
+    "code": "a1p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.acload/Ac/L2/Power": {
+    "code": "a2p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.acload/Ac/L3/Power": {
+    "code": "a3p",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.acload/CustomName": {
+    "code": "acn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.acload/Ac/L1/Energy/Forward": {
+    "code": "a1f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.acload/Ac/L2/Energy/Forward": {
+    "code": "a2f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.acload/Ac/L3/Energy/Forward": {
+    "code": "a3f",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.acload/Ac/Energy/Forward": {
+    "code": "af",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsource/ProductId": {
+    "code": "dsP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsource/Serial": {
+    "code": "dsS",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsource/FirmwareVersion": {
+    "code": "dsF",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsource/CustomName": {
+    "code": "dscn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsource/Settings/MonitorMode": {
+    "code": "dsm",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsource/Dc/0/Voltage": {
+    "code": "dsV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsource/Dc/0/Current": {
+    "code": "dsI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsource/Dc/0/Temperature": {
+    "code": "dsT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsource/Dc/1/Voltage": {
+    "code": "dsAV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsource/History/EnergyOut": {
+    "code": "dsf",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.dcsource/Alarms/LowVoltage": {
+    "code": "dseL",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsource/Alarms/HighVoltage": {
+    "code": "dseH",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsource/Alarms/LowStarterVoltage": {
+    "code": "dsLS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsource/Alarms/HighStarterVoltage": {
+    "code": "dsHS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsource/Alarms/LowTemperature": {
+    "code": "dsLT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsource/Alarms/HighTemperature": {
+    "code": "dsHT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/ProductId": {
+    "code": "alP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.alternator/Serial": {
+    "code": "alS",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.alternator/FirmwareVersion": {
+    "code": "alF",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.alternator/CustomName": {
+    "code": "alcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.alternator/Dc/0/Voltage": {
+    "code": "alV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.alternator/Dc/0/Current": {
+    "code": "alI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.alternator/Dc/0/Temperature": {
+    "code": "alT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.alternator/Dc/1/Voltage": {
+    "code": "alAV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.alternator/History/EnergyOut": {
+    "code": "alf",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.alternator/Alarms/LowVoltage": {
+    "code": "aleL",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/Alarms/HighVoltage": {
+    "code": "aleH",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/Alarms/LowStarterVoltage": {
+    "code": "alLS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/Alarms/HighStarterVoltage": {
+    "code": "alHS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/Alarms/LowTemperature": {
+    "code": "alLT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/Alarms/HighTemperature": {
+    "code": "alHT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/State": {
+    "code": "als",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.alternator/ErrorCode": {
+    "code": "alE",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.alternator/Engine/Speed": {
+    "code": "ales",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.alternator/Speed": {
+    "code": "alas",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.alternator/FieldDrive": {
+    "code": "alfd",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcload/ProductId": {
+    "code": "dlP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcload/Serial": {
+    "code": "dlS",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcload/FirmwareVersion": {
+    "code": "dlF",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcload/CustomName": {
+    "code": "dlcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcload/Settings/MonitorMode": {
+    "code": "dlm",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcload/Dc/0/Voltage": {
+    "code": "dlV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcload/Dc/0/Current": {
+    "code": "dlI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcload/Dc/0/Temperature": {
+    "code": "dlT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcload/Dc/1/Voltage": {
+    "code": "dlAV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcload/History/EnergyIn": {
+    "code": "dlf",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.dcload/Alarms/LowVoltage": {
+    "code": "dleL",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcload/Alarms/HighVoltage": {
+    "code": "dleH",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcload/Alarms/LowStarterVoltage": {
+    "code": "dlLS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcload/Alarms/HighStarterVoltage": {
+    "code": "dlHS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcload/Alarms/LowTemperature": {
+    "code": "dlLT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcload/Alarms/HighTemperature": {
+    "code": "dlHT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsystem/ProductId": {
+    "code": "dcP",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsystem/Serial": {
+    "code": "dcS",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsystem/FirmwareVersion": {
+    "code": "dcF",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsystem/CustomName": {
+    "code": "dccn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.dcsystem/Dc/0/Voltage": {
+    "code": "dcV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsystem/Dc/0/Current": {
+    "code": "dcI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsystem/Dc/0/Temperature": {
+    "code": "dcT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsystem/Dc/1/Voltage": {
+    "code": "dcAV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.dcsystem/History/EnergyOut": {
+    "code": "dcr",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.dcsystem/History/EnergyIn": {
+    "code": "dcf",
+    "whenToLog": "onIntervalOnlyWhenChanged"
+  },
+  "com.victronenergy.dcsystem/Alarms/LowVoltage": {
+    "code": "dceL",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsystem/Alarms/HighVoltage": {
+    "code": "dceH",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsystem/Alarms/LowStarterVoltage": {
+    "code": "dcLS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsystem/Alarms/HighStarterVoltage": {
+    "code": "dcHS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsystem/Alarms/LowTemperature": {
+    "code": "dcLT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.dcsystem/Alarms/HighTemperature": {
+    "code": "dcHT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/ProductId": {
+    "code": "mp",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.multi/Serial": {
+    "code": "ms",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.multi/FirmwareVersion": {
+    "code": "mv",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.multi/CustomName": {
+    "code": "mcn",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.multi/Dc/0/Voltage": {
+    "code": "mV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Dc/0/Current": {
+    "code": "mI",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Dc/0/Temperature": {
+    "code": "mT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L1/V": {
+    "code": "mIV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L1/P": {
+    "code": "mIP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L1/I": {
+    "code": "mII1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L1/F": {
+    "code": "mIF1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L2/V": {
+    "code": "mIV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L2/P": {
+    "code": "mIP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L2/I": {
+    "code": "mII2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L3/V": {
+    "code": "mIV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L3/P": {
+    "code": "mIP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/L3/I": {
+    "code": "mII3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L1/V": {
+    "code": "mOV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L1/P": {
+    "code": "mOP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L1/I": {
+    "code": "mOI1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L1/F": {
+    "code": "mOF1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L2/V": {
+    "code": "mOV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L2/P": {
+    "code": "mOP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L2/I": {
+    "code": "mOI2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L3/V": {
+    "code": "mOV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L3/P": {
+    "code": "mOP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/Out/L3/I": {
+    "code": "mOI3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Ac/In/1/CurrentLimit": {
+    "code": "mIL",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Alarms/HighTemperature": {
+    "code": "meT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/HighVoltage": {
+    "code": "meHV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/HighVoltageAcOut": {
+    "code": "meHVO",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/LowTemperature": {
+    "code": "meLT",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/LowVoltage": {
+    "code": "meLV",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/LowVoltageAcOut": {
+    "code": "meLVO",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/Overload": {
+    "code": "emO",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/Ripple": {
+    "code": "emR",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Alarms/LowSoc": {
+    "code": "emS",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/ErrorCode": {
+    "code": "mE",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Soc": {
+    "code": "mSOC",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/State": {
+    "code": "mSa",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Mode": {
+    "code": "mM",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/Yield/Power": {
+    "code": "mPVP",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Yield/User": {
+    "code": "mYU",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/V": {
+    "code": "mPVV",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/0/V": {
+    "code": "mPVV0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/1/V": {
+    "code": "mPVV1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/2/V": {
+    "code": "mPVV2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/3/V": {
+    "code": "mPVV3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/0/P": {
+    "code": "mPVP0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/1/P": {
+    "code": "mPVP1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/2/P": {
+    "code": "mPVP2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Pv/3/P": {
+    "code": "mPVP3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Relay/0/State": {
+    "code": "mRelay",
+    "whenToLog": "onIntervalAlwaysAndOnEvent"
+  },
+  "com.victronenergy.multi/MppOperationMode": {
+    "code": "mMm",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/AcIn1ToInverter": {
+    "code": "mt1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/AcIn2ToInverter": {
+    "code": "mt2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/AcIn1ToAcOut": {
+    "code": "mt3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/AcIn2ToAcOut": {
+    "code": "mt4",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/InverterToAcIn1": {
+    "code": "mt5",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/InverterToAcIn2": {
+    "code": "mt6",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/AcOutToAcIn1": {
+    "code": "mt7",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/AcOutToAcIn2": {
+    "code": "mt8",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/InverterToAcOut": {
+    "code": "mt9",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/OutToInverter": {
+    "code": "mt10",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/SolarToAcOut": {
+    "code": "mt11",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/SolarToBattery": {
+    "code": "mt12",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/SolarToAcIn1": {
+    "code": "mt13",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/Energy/SolarToAcIn2": {
+    "code": "mt14",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Yield": {
+    "code": "mYT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/MaxPower": {
+    "code": "mMPT",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Yield": {
+    "code": "mYY",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/MaxPower": {
+    "code": "mMPY",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/0/Yield": {
+    "code": "mYT0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/1/Yield": {
+    "code": "mYT1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/2/Yield": {
+    "code": "mYT2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/3/Yield": {
+    "code": "mYT3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/0/Yield": {
+    "code": "mYY0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/1/Yield": {
+    "code": "mYY1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/2/Yield": {
+    "code": "mYY2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/3/Yield": {
+    "code": "mYY3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/0/MaxPower": {
+    "code": "mMCPT0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/1/MaxPower": {
+    "code": "mMCPT1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/2/MaxPower": {
+    "code": "mMCPT2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/0/Pv/3/MaxPower": {
+    "code": "mMCPT3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/0/MaxPower": {
+    "code": "mMCPY0",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/1/MaxPower": {
+    "code": "mMCPY1",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/2/MaxPower": {
+    "code": "mMCPY2",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.multi/History/Daily/1/Pv/3/MaxPower": {
+    "code": "mMCPY3",
+    "whenToLog": "onIntervalAlways"
+  },
+  "com.victronenergy.paygo/Status/CurrentlyActive": {
+    "code": "pga",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.paygo/Status/ActiveSinceDate": {
+    "code": "pgaf",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.paygo/Status/ActiveUntilDate": {
+    "code": "pgat",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.paygo/Tokens/EntryBlockedUntilDate": {
+    "code": "pgb",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.paygo/Tokens/Last": {
+    "code": "pglt",
+    "whenToLog": "configChange"
+  },
+  "com.victronenergy.paygo/Tokens/LastTokenValid": {
+    "code": "pglv",
+    "whenToLog": "configChange"
+  }
+}
