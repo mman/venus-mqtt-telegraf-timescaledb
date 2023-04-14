@@ -1,12 +1,44 @@
-# Venus MQTT via Telegraf to TimescaleDB
+# Venus MQTT via Telegraf to InfluxDB and TimescaleDB
 
 The aim of this project is to investigate and design ideal database schema to store realtime measurements obtained by polling Victron Venus devices via MQTT for the purposes of later visualization and data analysis via Grafana.
 
-TLDR; The following sections describe testing setup:
+## TLDR; Quick start:
 
-1. [Venus to InfluxDB and Grafana using Telegraf](#playground-telegraf---influxdb---grafana).
+1. `$ ./start-grafana-and-dbs.sh`
+  
+2. `$ VENUS_HOST=192.168.1.19 ./ingest-to-influxdb.sh`
 
-2. [Venus to TimescaleDB and Grafana using Telegraf](#playground-telegraf---timescaledb---grafana).
+3. `$ VENUS_HOST=192.168.1.19 ./ingest-to-timescaledb.sh`
+
+Note: Replace `VENUS_HOST` in the example above with IP address of your Venus device.
+
+Navigate to http://localhost:3000, sign into Grafana using `admin`, `admin`, and poke around.
+
+Grafana will start up preconfigured with sample dashboards visualizing the same data from both InfluxDB and TimescaleDB.
+
+You can explore the dashboards and their underlying queries to see how the panels are created.
+
+## Summary
+
+Grafana provides excellent support for visualizing data from InfluxDB datasource.
+
+1. It automatically identifies `timestamp` and orders all data points appropriately.
+2. It automatically visualizes the first field of each measurement.
+3. It provides autocomplete to identify `measurement`.
+4. It provides autocomplete for all tags used when filtering queries (`WHERE` constraints).
+
+Grafana provides support for visualizing data stored in TimescaleDB via PostgreSQL datasource.
+
+1. It provides autocomplete to choose `table`.
+2. It provides autocomplete to choose `column`.
+3. You have to manually tell Grafana which field is `timestamp`.
+4. You have to manually tell Grafana to sort values by `timestamp`.
+5. You have to tell grafana what column should be visualized.
+6. Grafana will not help you autocomplete query constraints in `WHERE`.
+
+So creating SQL queries against TimescaleDB is much more time consuming and non-intuitive.
+
+I had to many times consult the `psql.sh` with manually entered SQL like `select distinct instance from measurememnt where code = 'PVP'` to identify all available solar chargers.
 
 ## MQTT
 
@@ -36,19 +68,25 @@ where
 
 ## InfluxDB Storage
 
-### Pushing MQTT to InfluxDB with Venus Grafana Server
+Storing data to InfluxDB using the `ingest-to-influxdb.sh` sample script produces the following data points:
 
-When Venus Grafana Server polls Venus device(s) via MQTT, it analyzes the MQTT topic and payload and prepares a following InfluxDB point:
-
-- `timestamp`
-- `measurement`: contains `path` (see above) from MQTT topic stripping the `portalId`, and `instanceNumber`, and including back the `component` part (for example `N/c0619ab2fcaa/vebus/276/Ac/Out/L1/P` -> `vebus/Ac/Out/L1/P`).
-- `tags`: `portalId`, `instanceNumber`, `name` (installation name).
-- `fields`: `value` with value of type `float`, `stringValue` with value of type `string`. Note: `object` typed values are ignored.
-
-This essentially over time populates the InfluxDB with the following series and measurements:
+Each line identifies one datapoint with `measurement`, `tags`, and `fields`, terminated by `timestamp`.
 
 ```
-# influx
+$ VENUS_HOST=192.168.1.19 ./ingest-to-influxdb.sh
+...
+system/Timers/TimeOnGrid,instanceNumber=0,name=c0619ab2fcaa,portalId=c0619ab2fcaa value=3639393 1681486791414904507
+hub4/MaxDischargePower,instanceNumber=0,name=c0619ab2fcaa,portalId=c0619ab2fcaa value=6639.731794662953 1681486791417308798
+vebus/Dc/0/Voltage,instanceNumber=276,name=c0619ab2fcaa,portalId=c0619ab2fcaa value=48.599998474121094 1681486791421747215
+vebus/Dc/0/Current,instanceNumber=276,name=c0619ab2fcaa,portalId=c0619ab2fcaa value=-81.9000015258789 1681486791424226548
+vebus/Dc/0/Power,instanceNumber=276,name=c0619ab2fcaa,portalId=c0619ab2fcaa value=-3546 1681486791426660715
+...
+```
+
+You can examine series and measurements recorded using the `influx.sh` script as follows:
+
+```
+$ ./influx.sh
 Connected to http://localhost:8086 version 1.8.10
 InfluxDB shell version: 1.8.10
 > use venus
@@ -73,29 +111,86 @@ system/Ac/Grid/L3/Power,instanceNumber=0,name=c0619ab2fcaa,portalId=c0619ab2fcaa
 ...
 ```
 
-### Visualizing InfluxDB data in Grafana
-
-Given the structure described above, Populating Grafana dashboards from Influx is as easy as using simple queries:
-
-```
-FROM system/Dc/Battery/Soc WHERE portalId="c0619ab2fcaa"
-```
-
-```
-FROM system/Dc/Pv/Power WHERE portalId="c0619ab2fcaa"
-```
-
-Where `system/Dc/Pv/Power` identifies the `measurement` and `WHERE` clauses match attached `tags`.
-
 ## TimescaleDB Storage
 
-### Pushing MQTT to TimescaleDB with Telegraf
+### Alternative 1: Store all measurements in one big SQL table
 
-I am using Telegraf from InfluxData to examine how real time `measurement` with `tags` and `fields` can be stored into relational database like TimescaleDB.
+Storing data to InfluxDB using the `ingest-to-timescaledb.sh` sample script produces the following data points:
 
-#### Approach 1: Mimic InfluxDB
+Each line identifies one row in a table called `measurement`, storing `timestamp`, `tags`, and `fields` as columns.
 
-The first approach will leave the measurements intact as in Influx, and will just replace forward slash in path with underscore. That way we will have many small tables, each representing a unique topic and containing only `timestamp`, `portalId`, and `value`, or `stringValue` as appropriate.
+```
+$ VENUS_HOST=192.168.1.19 ./ingest-to-timescaledb.sh`
+...
+measurement,code=PVP,instance=279,portal_id=c0619ab2fcaa,topic=solarcharger/Yield/Power valueFloat=118 1681487017577883167
+measurement,code=PVV,instance=279,portal_id=c0619ab2fcaa,topic=solarcharger/Pv/V valueFloat=136.64999389648438 1681487017580085667
+measurement,code=ScI,instance=279,portal_id=c0619ab2fcaa,topic=solarcharger/Dc/0/Current valueFloat=2.4000000953674316 1681487017582518792
+measurement,code=I,instance=512,portal_id=c0619ab2fcaa,topic=battery/Dc/0/Current valueFloat=-76.4000015258789 1681487017584531875
+measurement,code=g1,instance=0,portal_id=c0619ab2fcaa,topic=system/Ac/Grid/L1/Power valueFloat=5 1681487017586999209
+measurement,code=g2,instance=0,portal_id=c0619ab2fcaa,topic=system/Ac/Grid/L2/Power valueFloat=46 1681487017589478584
+measurement,code=g3,instance=0,portal_id=c0619ab2fcaa,topic=system/Ac/Grid/L3/Power valueFloat=6 1681487017592242959
+measurement,code=o1,instance=0,portal_id=c0619ab2fcaa,topic=system/Ac/ConsumptionOnOutput/L1/Power valueFloat=1052 1681487017599566542
+measurement,code=o2,instance=0,portal_id=c0619ab2fcaa,topic=system/Ac/ConsumptionOnOutput/L2/Power valueFloat=1455 1681487017601862417
+measurement,code=o3,instance=0,portal_id=c0619ab2fcaa,topic=system/Ac/ConsumptionOnOutput/L3/Power valueFloat=1181 1681487017604240542
+...
+```
+
+You can examine data recorded using the `psql.sh` script as follows:
+
+```
+$ ./psql.sh 
+psql (15.2)
+Type "help" for help.
+
+venus=# set search_path = venus;
+SET
+venus=# select * from measurement ;
+            time            |   code   | instance |  portal_id   |                          topic                          |     valueFloat      |          valueString          
+----------------------------+----------+----------+--------------+---------------------------------------------------------+---------------------+-------------------------------
+ 2023-04-14 15:21:39.856895 | si1      | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/AcInput1                  |                   1 | 
+ 2023-04-14 15:21:39.856899 | si2      | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/AcInput2                  |                   0 | 
+ 2023-04-14 15:21:39.857061 | sb       | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/BatteryService            |                     | com.victronenergy.battery/512
+ 2023-04-14 15:21:39.857066 | shao     | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/HasAcOutSystem            |                   1 | 
+ 2023-04-14 15:21:39.857085 | shd      | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/HasDcSystem               |                   0 | 
+ 2023-04-14 15:21:39.857087 | umc      | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/MaxChargeCurrent          |                  -1 | 
+ 2023-04-14 15:21:39.857089 | umv      | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/MaxChargeVoltage          |                   0 | 
+ 2023-04-14 15:21:39.85711  | svs      | 0        | c0619ab2fcaa | settings/Settings/SystemSetup/SharedVoltageSense        |                   2 | 
+ 2023-04-14 15:21:39.857218 | H4ms     | 0        | c0619ab2fcaa | settings/Settings/CGwacs/BatteryLife/MinimumSocLimit    |                  10 | 
+ 2023-04-14 15:21:39.85748  | H4as     | 0        | c0619ab2fcaa | settings/Settings/CGwacs/BatteryLife/SocLimit           |                  10 | 
+ 2023-04-14 15:21:39.857482 | H4bs     | 0        | c0619ab2fcaa | settings/Settings/CGwacs/BatteryLife/State              |                  10 | 
+ 2023-04-14 15:21:39.857484 | H4M      | 0        | c0619ab2fcaa | settings/Settings/CGwacs/Hub4Mode                       |                   2 | 
+... 
+```
+
+Querying such measurements using SQL requires the following logic:
+
+```
+$ ./psql.sh 
+psql (15.2)
+Type "help" for help.
+
+venus=# set search_path = venus;
+SET
+venus=# select time, "valueFloat" from measurement where (code = 'PVP' and instance = '278');
+            time            |     valueFloat     
+----------------------------+--------------------
+ 2023-04-14 15:21:39.880893 |                166
+ 2023-04-14 15:21:39.956164 | 168.99000549316406
+ 2023-04-14 15:21:42.01627  |  167.4499969482422
+ 2023-04-14 15:21:44.02025  | 167.02999877929688
+ 2023-04-14 15:21:45.958863 | 149.61000061035156
+ 2023-04-14 15:21:48.055989 | 157.22999572753906
+ 2023-04-14 15:21:50.001553 | 163.02999877929688
+ 2023-04-14 15:21:52.047923 |                164
+ 2023-04-14 15:21:53.993387 |  150.3000030517578
+...
+```
+
+Querying is possible by filtering on `code`, `topic`, `portal_id`, and `instance`.
+
+#### Alternative 2: Make Timescale DB Mimic InfluxDB
+
+This approach tries to simplify SQL queries by mimicking data storage to be similar to Influx. That way we will have many small tables, each representing a unique MQTT topic and containing only `timestamp`, `portalId`, `instanceNumber`, and `value`, or `stringValue` as appropriate.
 
 ```
 $ ./psql.sh
@@ -135,27 +230,9 @@ venus=> select * from venus.system_Dc_Pv_Power;
  2023-03-23 14:46:28.174759 | 0              | c0619ab2fcaa | c0619ab2fcaa |  644.5550060939786 | 644.5550060939786
 ```
 
-#### Approach 2: One table for all
+#### Alternative 3: Mix of both worlds
 
-This is the approach where one table called for example `measurements` stores all the measurements from all the devices and each unique measurement is identified by a combination of `productId`, `instanceNumber`, and `measurementCode`.
-
-`measurementCode` can essentially be mapped to DBUS Path (MQTT topic) or combined together with `productId` so that less foreign key combinations are possible.
-
-TODO: fill in the details.
-TODO: figure out how to obtain `productId` and `measurementCode` from MQTT.
-
-Visualizing such data via Grafana is rather complex, because to identify proper metric we have to essentailly 
-
-```
-$ ./psql.sh
-venus=> SELECT time, instanceNumber, portalId, productId, measurementCode * from venus.measurements
-WHERE portalId='A' AND productId='B' and measurementId='C';
-
-```
-
-#### Approach 3: Mix of both worlds
-
-In this approach we create separate table for each top level `component`. In that table we store `value` of the measurement, and attach a reduced `topic` and `instanceNumber`.
+In this approach we create separate table for each top level MQTT `component`. In that table we store `value` of the measurement, and attach a reduced `topic`, `portalId`, and `instanceNumber`.
 
 ```
 $ ./psql.sh
@@ -195,7 +272,7 @@ venus=# select time,value from system where topic='Dc/Battery/Soc';
 
 ```
 
-List of topics for each category varies, and essentially maps to the `measurementCode` outlined in Approach 2.
+List of topics for each category varies.
 
 ```
 # select distinct topic from system order by topic;
@@ -212,11 +289,6 @@ List of topics for each category varies, and essentially maps to the `measuremen
 ```
 
 Topics and other complex columns can be extracted to separate tables and visualized by creating auto joining views as outlined for example here: https://github.com/influxdata/telegraf/tree/master/plugins/outputs/postgresql#tag-table-with-view.
-
-
-### Visualizing TimescaleDB data in Grafana
-
-TODO: See above...
 
 
 ## Playground: Telegraf -> InfluxDB -> Grafana
