@@ -45,7 +45,7 @@ services:
       - GF_LOG_MODE=console
       - GF_INSTALL_PLUGINS=simpod-json-datasource
       - GF_PATHS_PROVISIONING=/provisioning
-      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/provisioning/dashboards/venus-devices.json
+      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/provisioning/dashboards/influxdb-vs-timescaledb.json
       - VGS_INFLUXDB_URL=http://host.docker.internal:8086
       - VGS_INFLUXDB_USERNAME=venus
       - VGS_INFLUXDB_PASSWORD=s3cr4t
