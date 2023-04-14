@@ -35,6 +35,7 @@ Grafana provides support for visualizing data stored in TimescaleDB via PostgreS
 4. You have to manually tell Grafana to sort values by `timestamp`.
 5. You have to tell grafana what column should be visualized.
 6. Grafana will not help you autocomplete query constraints in `WHERE`.
+7. Grafana will automatically only fetch 50 records, you have to manually remove that. TODO: figure out how to properly query selected time range without putting strain on DB.
 
 So creating SQL queries against TimescaleDB is much more time consuming and non-intuitive.
 
